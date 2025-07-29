@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Cheat Sheets by Jullyano Lino</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            color: #e6edf3;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, #1c2128 0%, #21262d 100%);
+            border-radius: 16px;
+            border: 1px solid #30363d;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            color: #58a6ff;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+        }
+
+        .header .subtitle {
+            color: #7d8590;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .author {
+            color: #f85149;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .cheatsheets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .cheatsheet-card {
+            background: rgba(33, 38, 45, 0.8);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid #30363d;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .cheatsheet-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(88, 166, 255, 0.2);
+            border-color: #58a6ff;
+        }
+
+        .card-title {
+            color: #7c3aed;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-description {
+            color: #c9d1d9;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: rgba(88, 166, 255, 0.2);
+            color: #58a6ff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .card-status {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .status-available { color: #22c55e; }
+        .status-coming-soon { color: #fbbf24; }
+
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            color: #7d8590;
+            border-top: 1px solid #30363d;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .cheatsheets-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Programming Cheat Sheets</h1>
+            <div class="subtitle">Quick references for developers and engineers</div>
+            <div class="author">Created by Jullyano Lino</div>
+        </div>
+
+        <div class="cheatsheets-grid">
+            <!-- Q# QKD Cheat Sheet -->
+            <a href="./q-sharp-qkd/" class="cheatsheet-card">
+                <div class="card-title">
+                    🔐 Q# Programming for QKD
+                </div>
+                <div class="card-description">
+                    Complete guide to Q# programming with focus on Quantum Key Distribution protocols like BB84 and E91. Includes practical examples and best practices.
+                </div>
+                <div class="card-tags">
+                    <span class="tag">Q#</span>
+                    <span class="tag">Quantum</span>
+                    <span class="tag">Cryptography</span>
+                    <span class="tag">BB84</span>
+                </div>
+                <div class="card-status status-available">✅ Available</div>
+            </a>
+
+            <!-- Future cheat sheets (placeholders) -->
+            <div class="cheatsheet-card" style="opacity: 0.6;">
+                <div class="card-title">
+                    🐍 Python Machine Learning
+                </div>
+                <div class="card-description">
+                    Essential Python libraries and techniques for machine learning, including scikit-learn, pandas, and neural networks.
+                </div>
+                <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">ML</span>
+                    <span class="tag">Data Science</span>
+                </div>
+                <div class="card-status status-coming-soon">🚧 Coming Soon</div>
+            </div>
+
+            <div class="cheatsheet-card" style="opacity: 0.6;">
+                <div class="card-title">
+                    🐳 Docker Essentials
+                </div>
+                <div class="card-description">
+                    Docker commands, best practices, and container orchestration patterns for modern development workflows.
+                </div>
+                <div class="card-tags">
+                    <span class="tag">Docker</span>
+                    <span class="tag">DevOps</span>
+                    <span class="tag">Containers</span>
+                </div>
+                <div class="card-status status-coming-soon">🚧 Coming Soon</div>
+            </div>
+
+            <div class="cheatsheet-card" style="opacity: 0.6;">
+                <div class="card-title">
+                    ⚛️ React Hooks Guide
+                </div>
+                <div class="card-description">
+                    Modern React development with hooks, context, and performance optimization techniques.
+                </div>
+                <div class="card-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Frontend</span>
+                </div>
+                <div class="card-status status-coming-soon">🚧 Coming Soon</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🚀 More cheat sheets coming soon! Each designed for quick reference and practical use.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://github.com/YOUR_USERNAME/YOUR_REPO_NAME" style="color: #58a6ff;">View on GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
