@@ -8,7 +8,7 @@ The goal of this repository is to centralize useful cheat sheets that cover synt
 
 ## Contents
 Below is a list of the cheat sheets currently available in this repository. New cheat sheets are added regularly, so check back often!
-- [Microsoft Q# & QKD](https://github.com/jullyanolino/cheat_sheets/blob/main/quantum/q-sharp.html))
+- [Microsoft Q# & QKD](https://github.com/jullyanolino/cheat_sheets/blob/main/quantum/q-sharp.html)
 
 More cheat sheets coming soon!
 
